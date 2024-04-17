@@ -1,17 +1,22 @@
 import './assets/App.scss';
-import EmployeeCard from "./EmployeeCard/EmployeeCard";
+import EmployeeCardContainer from './EmployeeCard/EmployeeCardContainer';
+import SearchInputContainer from './SearchInput/SearchInputContainer';
 import data from './team';
-
 
 function App() {
 
   return (
     <>
-      <h1 className='heading'>Ticket Tracker</h1>
+      <h1 className='heading'>TICKET TRACKER</h1>
       
-      <section className='employee-cards'>
-        <EmployeeCard id={1} name="" role="Hna dman"/>
+      <section className='search-employee'>
+        <SearchInputContainer users={data} />
       </section>
+
+      <section className='employee-cards'>
+        <EmployeeCardContainer users={data} />
+      </section>
+
     </>
   )
 }

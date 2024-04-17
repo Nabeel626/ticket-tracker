@@ -1,9 +1,62 @@
+.employee-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .employeeCard__container {
     border: 2px solid black;
+    box-shadow: rgb(60, 60, 255) 8px 10px ;
+    background-color:  #6666ff;
     border-radius: 10px;
     height: 70%;
-    width: 50%;
-    margin: 10px;
+    width: 80%;
+    gap: 20px;
+    display: grid;
+    margin: 20px;
     padding: 30px;
-    text-align: center;
+
+    .employeeCard__name, .employeeCard__role {
+        background-color:  #6666ff;
+    }
+
+    .employeeCard__splitter {
+        border: 3px solid #4d4dff;
+        border-radius: 10px;
+    }
+
+    p {
+        background-color:  #6666ff; 
+    }
+
+    .employeeCard__counter--Container {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 20% 1fr 20%;
+        font-size: 18px;
+        text-align: center;
+        background-color:  #6666ff;
+
+        .employeeCard__counter {
+            background-color:  #6666ff;
+        }
+
+        .employeeCard__increase, .employeeCard__decrease {
+            border: none;
+            cursor: pointer;
+            font-size: 30px;
+            border-radius: 10px;
+        }
+
+        .employeeCard__increase {
+            position: relative;
+            right: 2em;
+        }
+
+        .employeeCard__decrease {
+            position: relative;
+            left: 2em;
+        }
+    }
 }
