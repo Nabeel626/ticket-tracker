@@ -1,13 +1,12 @@
 
 @media screen and (min-width: 790px) {
     
-    .employee-cards  {
+    .employee-cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-left: 40px;
 
         .employeeCard__container {
-            height: auto;
 
             .employeeCard__increase, .employeeCard__decrease {
                 font-size: 2vw;
@@ -22,10 +21,8 @@
     .employee-cards  {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 40px;
 
         .employeeCard__container {
-            height: auto;
 
             .employeeCard__increase, .employeeCard__decrease {
                 font-size: 2vw;

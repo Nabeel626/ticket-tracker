@@ -23,6 +23,9 @@ const SearchInputContainer = ({users} : TeamData) => {
     }
 
     const filteredSearch = users.filter((user) => {                
+        
+        console.log(user.name.toLowerCase().includes(searchTerm));
+        
         return user.name.toLowerCase().includes(searchTerm);
         
     });
@@ -30,13 +33,13 @@ const SearchInputContainer = ({users} : TeamData) => {
     return (
         <>
             <SearchInput label="Search By Name" searchTerm={searchTerm} handleInput={handleInput} />
-            {filteredSearch}
-            {users.map((user) => {
+            {/* {filteredSearch} */}
+            {/* {users.map((user) => {
                 return <EmployeeCard key={user.id} id={user.id} name={String(filteredSearch)} role={user.role} /> //This will map out the employee card so that it can return it
-            })}
+            })} */}
             
         </>
     )
 }
 
-export default SearchInputContainer
+export default SearchInputContainer;
